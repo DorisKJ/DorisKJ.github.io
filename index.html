@@ -54,7 +54,35 @@
 
     </div>
   </header><!-- End Header -->
+  
+  
+  <!-- ======= Chatbot ======== -->
 
+    <script>!(function () {
+      let e = document.createElement("script"),
+        t = document.head || document.getElementsByTagName("head")[0];
+      (e.src =
+        "https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.js"),
+        (e.async = !0),
+        (e.onload = () => {
+          window.WebChat.default(
+            {
+              initPayload: '/greet',
+              customData: { language: "en" },
+              socketUrl: "http://localhost:5005",
+              title: 'Dreeven technologies',
+              subtitle: 'How can I help?',
+              profileAvatar: "bot.png",
+              // add other props here
+            },
+            null
+          );
+        }),
+        t.insertBefore(e, t.firstChild);
+      })();
+    </script>
+
+  
   <!-- ======= Hero Section ======= -->
   <div id="hero" class="hero route bg-image" style="background-image: url(img/hero-bg.jpeg)">
     <div class="overlay-itro"></div>
