@@ -1281,13 +1281,6 @@ a:hover {
 }
 
 /*--------------------------------------------------------------
-# Chatbot
---------------------------------------------------------------*/
-.rw-conversation-container .rw-header{background-color: #ee3d3d;}
-.rw-conversation-container .rw-messages-container .rw-message .rw-client{background-color: #ee3d3d;}
-.rw-launcher{background-color: #ee3d3d;}
-
-/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 footer {
